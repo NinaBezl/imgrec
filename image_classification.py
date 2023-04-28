@@ -13,7 +13,7 @@ def load_model():
 
 
 def preprocess_image(img):
-    img = img.resize((300, 300))
+    img = img.resize((225, 225))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
